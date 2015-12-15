@@ -1,0 +1,17 @@
+default: &default_config
+
+    CONTEXT_TRIGGER_CONFIG_GROUP: 'development:affiliates,ageing,payments;'
+    
+development: 
+    <<: *default_config
+
+    jobgroups: 
+        - name: 'Group 1'
+          maxexecutors: 2
+          maxretries: 5
+          retryintervalseconds: 300
+          
+        - name: 'Group 2'
+          maxexecutors: 4
+          maxretries: 5
+          retryintervalseconds: 600

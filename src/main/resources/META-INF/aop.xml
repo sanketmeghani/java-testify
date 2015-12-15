@@ -1,0 +1,6 @@
+<!-- aop.xml -->
+<aspectj>
+    <aspects>
+        <aspect name="dev.sanket.metrics.Metrics"/>
+    </aspects>
+</aspectj>
